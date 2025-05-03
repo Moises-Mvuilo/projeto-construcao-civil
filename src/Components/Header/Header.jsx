@@ -4,7 +4,7 @@ import { useState } from 'react';
 import {Link} from 'react-router-dom'
 
 //ASSETS
-import Logo from '../../assets/dnc-logo.svg'
+import Logo from '../../assets/logo.png'
 import './Header.css';
 
 //COMPONENTS
@@ -21,7 +21,7 @@ function Header () {
     <header>
         <div className="container">
             <div className="al-center d-flex jc-space-between">
-                <Link to='/'><img src={Logo} /></Link>
+                <Link to='/'><img src={Logo} width="150px" loading='lady' /></Link>
                 <div className="mobile-menu" onClick={(toggleMenu)}>
                   <Button buttonstyle="secondary">MENU</Button>
                 </div>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 //ASSETS
 
-import Logo from "../../assets/dnc-logo.svg";
+import Logo from "../../assets/logo.png";
 import brazilLogo from "../../assets/brazil.svg";
 import usaLogo from "../../assets/usa.svg";
 import facebookLogo from "../../assets/facebook.svg";
@@ -18,7 +18,7 @@ function Footer() {
       <div className="container">
         <div className=" d-flex jc-space-between mobile-fd-column">
           <div className="footer-logo-col">
-            <img src={Logo} className="footer-logo" /> <br />
+          <Link to='/'><img src={Logo} width="150px"  loading="lady" /></Link>
             <p className="grey-1-color">
               {" "}
               A escola que prepara você com para as profissões em alta no
